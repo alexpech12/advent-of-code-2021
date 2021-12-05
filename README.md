@@ -33,3 +33,16 @@ Part 2 was a nice, simple modification of Part 1 (plus a small bug fix - turned 
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/6634c13fd2c6db29212969bbd48ef0496d10f3fe/day4/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/6634c13fd2c6db29212969bbd48ef0496d10f3fe/day4/part2.rb)
+
+## Day 5 - ⭐⭐
+Making mistakes, and Ruby letting me down and making things difficult.
+
+A couple of hiccups today. First, I tried implementing a solution where I could 'check' a point against any line and see if that point existed on the line. The logic was simpler, but it required two nested loops (I was looping through each point in the 2D array, and then within that looping through the collection of lines). This was fine for the example data (10 x 10 x 10 = 1000 iterations), but way too slow for the puzzle input (10 x 10 x 10 = 1000 iterations vs 1000 x 1000 x 500 = 500,000,000 iterations!). Once I reversed things so that I could just iterate through the lines and increment counters for the points they intersected things were much speedier.
+
+Generating an array of points on a 2D grid from a start point and a end point in Ruby was easier said than done. The main difficulty is that Ruby Ranges don't support reverse ranges. So, generating points for a line segment like (1,2) -> (1,5) is simple - for example, `(2..5).to_a.map { |y| [x, y] }`. If the points are reversed though, (1,5) -> (1,2), you need to manually flip the order so that the code looks the same as above.
+
+For diagonals it's even more difficult. (0,8) -> (8,0) can't just have the order of the arrays flipped. Either x or y is always going to be in reverse order. The solution I ended up opted for was to flag whether the points needed to be reversed, flip them the right way to create a Range and call `to_a`, then reverse my resulting array if it had previously been flipped. This is a lot of fuss just to generate two integer sequences and zip them together.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/7a31eb57198fc2f76ab9fda159e102f667b9b11f/day5/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/7a31eb57198fc2f76ab9fda159e102f667b9b11f/day5/part2.rb)
