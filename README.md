@@ -22,3 +22,14 @@ I do feel like there should have been a better way to do 'count all the 1s in a 
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/f616883fbf6ab217bf6d1bc0943a3a75637d81a0/day3/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/f616883fbf6ab217bf6d1bc0943a3a75637d81a0/day3/part2.rb)
+
+## Day 4 - ⭐⭐
+We're breaking out the classes and the regex!
+
+This solution got me writing a simple class to represent a bingo board, and a regex to read the input. The regex was simple, and something I could've easily done with some `String#split` chains, but regex was briefer and I need the practice anyway.
+
+Part 2 was a nice, simple modification of Part 1 (plus a small bug fix - turned out I was instantiating an additional empty BingoBoard instance). 
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/6634c13fd2c6db29212969bbd48ef0496d10f3fe/day4/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/6634c13fd2c6db29212969bbd48ef0496d10f3fe/day4/part2.rb)
