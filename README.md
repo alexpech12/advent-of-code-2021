@@ -59,3 +59,14 @@ When a better solution dawned on me, it seemed obvious - we don't need to track 
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1827d7f6053f6b5b03329699e1be63b12733c392/day6/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1827d7f6053f6b5b03329699e1be63b12733c392/day6/part2.rb)
+
+## Day 7 - ⭐⭐
+A nice, easy one today.
+
+The solution could be easily implemented by just iterating through each possible position using a single nested loop.
+
+Part 2 followed on smoothly from Part 1, requiring just a small tweak in how we were calculating fuel consumption.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/b9417e0bd70c414a51071fdd77df2a1f70950e09/day7/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/b9417e0bd70c414a51071fdd77df2a1f70950e09/day7/part2.rb)
