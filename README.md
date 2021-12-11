@@ -46,3 +46,16 @@ For diagonals it's even more difficult. (0,8) -> (8,0) can't just have the order
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/7a31eb57198fc2f76ab9fda159e102f667b9b11f/day5/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/7a31eb57198fc2f76ab9fda159e102f667b9b11f/day5/part2.rb)
+
+## Day 6 - ⭐⭐
+Part 2 challenge here was pretty challenging, but simple once I'd figured out how to structure my solution.
+
+For Part 1, I went with the obvious, iterative solution, which pretty much followed exactly how the problem was presented. I took the bait and subsequently struggled with Part 2 as my solution couldn't scale far enough.
+
+I was stuck for a while thinking I needed to somehow mathematically model the exponential process, watching videos on modelling exponential growth.
+
+When a better solution dawned on me, it seemed obvious - we don't need to track every individual fish, we just need to know how many there are of each timer value. Restructuring the code for Part 2 to do this instead got to the solution easily.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1827d7f6053f6b5b03329699e1be63b12733c392/day6/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1827d7f6053f6b5b03329699e1be63b12733c392/day6/part2.rb)
