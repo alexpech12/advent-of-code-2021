@@ -70,3 +70,13 @@ Part 2 followed on smoothly from Part 1, requiring just a small tweak in how we 
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/b9417e0bd70c414a51071fdd77df2a1f70950e09/day7/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/b9417e0bd70c414a51071fdd77df2a1f70950e09/day7/part2.rb)
+
+
+## Day 8 - ⭐⭐
+This was a fun little puzzle. Not too difficult, but it required a bit of time just to write everything out. A difficult one to do fast I think!
+
+The trick for me was figuring out how to differentiate between 2 and 5 on the seven-segment display. All the other numbers contain a unique set of 1,4,7 and 8, which you can get right off the bat. For 2 and 5, you need to solve the other numbers first before you have enough information.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1bf99d57200ec118eac7427d774724c602c8b549/day8/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1bf99d57200ec118eac7427d774724c602c8b549/day8/part2.rb)
