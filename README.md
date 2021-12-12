@@ -102,3 +102,25 @@ This worked really well, because it immediately gave me the expected vs actual b
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/148b66253242ed663d2a313e9fdb26c0200d701f/day10/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/148b66253242ed663d2a313e9fdb26c0200d701f/day10/part2.rb)
+
+## Day 11 - ⭐⭐
+More messing about with 2D arrays
+
+I made a bit of a mess of this one. Lots of issues with the ordering that things were happening in (eg, incrementing things after they'd flashed, flashing things multiple times, etc).
+
+There was a big Ruby gotcha that I got stuck on for a while. I was expecting something like `data[x]` to return `nil` if `x = -1`, because it's out of bounds. Unfortunately, for Ruby, `data[-1]` just returns the last element. So, for ages my answers were just _slightly_ off because my flashes were wrapping around at the edges.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/60ec85de730e3060fb0ffa92e9a4daf71709aa0e/day11/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/60ec85de730e3060fb0ffa92e9a4daf71709aa0e/day11/part2.rb)
+
+## Day 12 - ⭐⭐
+Recursion!
+
+This one was fun. A few little gotchas, like needing to treat paths as bi-directional and figure out exactly how return values needed to look to stack up at the end.
+
+As always, recursion is confusing at the best of times, but I used the stock-standard strategy of starting with the end conditions and working backwards, and things fell into place pretty easily.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/60ec85de730e3060fb0ffa92e9a4daf71709aa0e/day12/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/60ec85de730e3060fb0ffa92e9a4daf71709aa0e/day12/part2.rb)
