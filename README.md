@@ -92,3 +92,13 @@ What we're essentially doing is an implementation of a [Flood Fill](https://en.w
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/8d8551ebff39c8a3108d4a3682d55391239f863c/day9/part2.rb)
 
+## Day 10 - ⭐⭐
+Stacks!
+
+At least, that's how I solved today's puzzle. The basic concept was that an open bracket means add that bracket to the stack, and a closing bracket means to pop one off. If the closing bracket doesn't match up to the top of the stack, we've found an error.
+
+This worked really well, because it immediately gave me the expected vs actual bracket, and also the solution for Part 2 - the list of brackets that didn't get closed. This strategy made both parts straight-forward.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/148b66253242ed663d2a313e9fdb26c0200d701f/day10/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/148b66253242ed663d2a313e9fdb26c0200d701f/day10/part2.rb)
