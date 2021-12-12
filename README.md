@@ -80,3 +80,15 @@ The trick for me was figuring out how to differentiate between 2 and 5 on the se
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1bf99d57200ec118eac7427d774724c602c8b549/day8/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1bf99d57200ec118eac7427d774724c602c8b549/day8/part2.rb)
+
+## Day 9 - ⭐⭐
+Sets!
+
+I found that using Sets (basically just an array with built-in uniqueness) was a convenient way to implement Part 2 today.
+
+What we're essentially doing is an implementation of a [Flood Fill](https://en.wikipedia.org/wiki/Flood_fill) algorithm. I didn't use this as a reference while I was writing my code, but it's basically where I ended up. The basic idea was to keep track of the edges of the basin, and iteratively expand the basin by checking if those edges should be part of the basin and then pushing them into that set.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/8d8551ebff39c8a3108d4a3682d55391239f863c/day9/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/8d8551ebff39c8a3108d4a3682d55391239f863c/day9/part2.rb)
+
