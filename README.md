@@ -124,3 +124,16 @@ As always, recursion is confusing at the best of times, but I used the stock-sta
 [Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/60ec85de730e3060fb0ffa92e9a4daf71709aa0e/day12/part1.rb)
 
 [Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/60ec85de730e3060fb0ffa92e9a4daf71709aa0e/day12/part2.rb)
+
+## Day 13 - ⭐⭐
+More 2D arrays
+
+This one was theoretically quite simple. I think the main thing to notice was that we're always folding exactly in half, which makes combining 2D arrays easy. Nevertheless, there were a few things that tripped me up.
+
+First, I'd assumed (incorrectly) that both the test data and the input data started the same way (folding along y). I'd noticed that the folds were always exactly in half, so I thought I could avoid needing to parse the instructions. It turned out this wasn't quite the case, because the test data started differently to the input. So, I ended up just needing to change my code as I moved from the test data to the input data. I've since gone back and cleaned up Part 2, but you can still see the original mess in [Part 1](https://github.com/alexpech12/advent-of-code-2021/blob/b006f03d35217ffb1ae506b602716ee37752c773/day13/part1.rb), and in [Part 2's commit history](https://github.com/alexpech12/advent-of-code-2021/blob/b006f03d35217ffb1ae506b602716ee37752c773/day13/part2.rb).
+
+Second, I'd assumed (again, incorrectly) that there'd be data points along all edges of the paper, so I'd be able to determine the size of the page by looking for maximums. Again, this wasn't the case. Here at least I made use of where I'd noticed that we were always folding in half, so ultimately the first two folds were the basis for my overall dimensions.
+
+[Part 1 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1061e4cef59b805b30b66a760718847d00e7dcc4/day13/part1.rb)
+
+[Part 2 solution](https://github.com/alexpech12/advent-of-code-2021/blob/1061e4cef59b805b30b66a760718847d00e7dcc4/day13/part2.rb)
